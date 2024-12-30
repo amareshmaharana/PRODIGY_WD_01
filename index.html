@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Who are we?</a></li>
+        </ul>
+    </header>
+
+    <section class="banner">
+        <div class="content">
+            <h1>Welcome to our website</h1>
+        </div>
+    </section>
+    <footer>
+        <p>Made with  &hearts;<br />Thank You for visiting!!!</p>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+  </body>
+</html>
